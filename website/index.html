@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mary Chukwuma - Resume</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 id="name">Mary Chukwuma</h1>
+        <p id="title">Cloud Engineer</p>
+        <div class="contact">
+            <p><a href="mailto:chukwumamary2@gmail.com">chukwumamary2@gmail.com</a></p>
+            <p><a href="https://linkedin.com/in/marychuks">linkedin.com/in/marychuks</a></p>
+            <p><a href="https://github.com/brendagold">github.com/brendagold</a></p>
+            <p><a href="https://devmary.com">devmary.com</a></p>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h2>Professional Summary</h2>
+            <p>Highly skilled Frontend Developer with over 3 years of experience building user-friendly, accessible web
+                applications. Proficient in React, Next.js, and TypeScript, with expertise in creating scalable, optimized solutions
+                and responsive designs using frameworks like Tailwind CSS and Material UI. Skilled in integrating APIs,
+                developing reusable components, and delivering high-quality code through test-driven development (TDD).
+                Committed to adopting modern tools and collaborating with teams to build efficient, robust systems.</p>
+        </section>
+        <section>
+            <h2>Skills / Competencies</h2>
+            <ul>
+                <li>Frontend Development: Proficient in React, Next.js, and TypeScript for building scalable web applications.
+                    Skilled in using modern libraries and frameworks like Tailwind CSS, Chakra UI, and Material UI for
+                    responsive design.</li>
+                <li>Backend Integration: Experienced in integrating RESTful APIs to enable seamless data exchange.
+                    Knowledgeable in developing reusable components to accelerate development cycles.</li>
+                <li>Development Practices: Strong advocate for test-driven development (TDD) to ensure code quality and reliability.
+                    Experienced in version control using Git and CI/CD pipelines for streamlined deployments.</li>
+                <li>DevOps Practices: Proficient in version control using Git and platforms like GitHub for efficient collaboration.
+                    Experienced in CI/CD pipelines to automate testing and deployments.
+                    Skilled in deploying applications to cloud platforms such as AWS and using hosting services like Netlify.</li>
+                <li>Technical Competencies: Proficient in JavaScript and TypeScript for frontend application development.
+                    Familiar with performance optimization techniques for web applications.</li>
+                <li>Interpersonal Skills: Effective collaborator with cross-functional teams to deliver high-quality solutions.
+                    Strong problem-solving and critical-thinking abilities, focused on user needs</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Professional Experience</h2>
+            <article>
+                <h3>Lead Front-end Developer</h3>
+                <p><strong>DotCampus</strong> | Lagos, Nigeria (Remote)</p>
+                <p>August 2023 – Present</p>
+                <ul>
+                    <li>Spearheaded the implementation and testing of new software features, ensuring compatibility with various systems.</li>
+                    <li>Migrated the company website from React to Next.js, enhancing website performance and SEO.</li>
+                    <li>Collaborated with the design team to create a responsive, user-friendly interface for the e-learning platform.</li>
+                    <li>Provided technical support to users, addressing software-related issues, troubleshooting bugs, and guiding them through
+                        solutions</li>
+                </ul>
+            </article>
+            <article>
+                <h3>React Developer</h3>
+                <p><strong>Archivia Technologies</strong> | Delaware, USA (Remote)</p>
+                <p>October 2020 – September 2023</p>
+                <ul>
+                    <li>Built and maintained scalable front-end systems using ReactJS, NextJS and TailwindCSS in collaboration with designers
+                        and backend teams.</li>
+                    <li>Spearheaded the end-to-end design and development of numerous cutting-edge, scalable web applications, delivering
+                        tangible results in accessibility, user engagement, and performance.</li>
+                    <li>Developed reusable components and libraries for future use, ensuring consistent design patterns and code quality.</li>
+                    <li>Collaborated with the QA team to implement test-driven development (TDD) practices, ensuring high-quality code and
+                        reliable software solutions.</li>
+                </ul>
+            </article>
+        </section>
+        <section>
+            <h2>Education</h2>
+            <ul>
+                <li><strong>International Business University</strong> | MBA (April, 2026)</li>
+                <li><strong>Federal University of Technology, Owerri</strong> | B.Tech in Computer Science (December, 2019)</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>Tweep</strong>: Tweep is a twitter post scheduler chrome extension. Developed a robust platform to schedule and automate Twitter
+                    posts, leveraging cutting-edge technologies. Utilized ReactJS, NextJS, TailwindCSS, and TypeScript for the
+                    frontend, and built a highly scalable backend using NodeJS, DynamoDB, AWS Lambda, API Gateway, and
+                    EventBridge. This project enables users to schedule posts at specific times seamlessly, ensuring efficient social
+                    media management.</li>
+                <li><strong>DotCampus</strong>: An innovative e-learning platform designed to empower aspiring software engineers through mentorship and
+                    skill-based learning. Leveraged ReactJS, NextJS, TailwindCSS, and TypeScript to create an intuitive and responsive
+                    user interface. The website enables secure user authentication, course management, and real-time interactions. This
+                    platform bridges the gap between learners and industry professionals, fostering growth and career readiness.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Mentorship</h2>
+            <ul>
+                <li><strong>DotCampus</strong>: responsible for mentoring and giving career advice to aspiring software engineers (September 2023 - Ongoing)</li>
+                <li><strong>Programming Coach</strong>: teaches about programming, data structures and algorithms, coding interview prep and building a portfolio (February 2021 - Ongoing)</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Certifications</h2>
+            <ul>
+                <li><strong>AWS</strong> Certified Solutions Architect Associate (December 2024)</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <h4>Designed by <a href='https://devmary.com'>Mary</a> for Cloud Resume Challenge.</h4>
+        <p>Read the project documentation <a>here</a> </p>
+        <p> Website views count: <span id="viewCount">Loading...</span> </p>
+    </footer>
+    <script>
+        const functionUrl = "https://hined5fmyfuktebryav7tuu2ja0caqmz.lambda-url.us-east-1.on.aws/";
+      
+        async function fetchViewCount() {
+          try {
+            const response = await fetch(functionUrl);
+            const data = await response.json();
+      
+            // Display the view count
+            document.getElementById("viewCount").innerText = data.views;
+          } catch (error) {
+            console.log(error)
+            console.error("Error fetching view count:", error);
+            document.getElementById("viewCount").innerText = "error";
+          }
+        }
+      
+        // Run when the page loads
+        window.onload = fetchViewCount;
+      </script>
+</body>
+</html>
